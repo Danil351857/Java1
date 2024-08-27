@@ -10,8 +10,8 @@ public class App
 {
     public static void main( String[] args )
     {
-        new Basics().run();
-        Shop shop = new Shop();
-        shop.Print();
+        //new Basics().run();
+        new Shop().run();
+
     }
 }

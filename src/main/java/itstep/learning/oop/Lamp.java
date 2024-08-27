@@ -1,6 +1,6 @@
 package itstep.learning.oop;
 
-public class Lamp extends Product {
+public class Lamp extends Product implements Testable {
 
     double power;
     public Lamp(String manufacturer, double power) {
@@ -21,4 +21,15 @@ public class Lamp extends Product {
         }
         this.power = power;
     }
+    @Override
+    public void test(){
+        System.out.println("Testing: " + this.getCard());
+    }
+    @Works
+    public void shine(){
+        System.out.println("Working on:" + this.getCard());
+    }
+    @Warranty(0)
+    public void warrantylamp(){}
+
 }

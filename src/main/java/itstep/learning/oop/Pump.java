@@ -1,6 +1,8 @@
 package itstep.learning.oop;
+import java.util.Locale;
 
-public class Pump extends Product {
+
+public class Pump extends Product implements Manual{
      int productivity;
 
      public Pump(String manufacture, int productivity) {
@@ -18,4 +20,14 @@ public class Pump extends Product {
     public void setProductivity(int productivity) {
          this.productivity = productivity;
     }
+    @Works
+    public void pump(){
+        System.out.println("Working on:" + this.getCard());
+    }
+    @Warranty(2)
+    public void Warrantypump(){
+
+    }
+
+
 }

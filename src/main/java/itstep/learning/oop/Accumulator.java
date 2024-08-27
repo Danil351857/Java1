@@ -9,7 +9,7 @@ public class Accumulator extends Product {
 
     @Override
     public String getCard() {
-        return String.format("Accumulator: '%s', Capacity: %d W", super.getManufacturer(), this.getCapacity());
+        return String.format("Accumulator: '%s', Capacity: %d mAh", super.getManufacturer(), this.getCapacity());
     }
     public int getCapacity() {
 
@@ -17,5 +17,13 @@ public class Accumulator extends Product {
     }
     public void setCapacity(int capacity) {
         this.capacity = capacity;
+    }
+    @Works
+    public void accumulator(){
+        System.out.println("Working on:" + this.getCard());
+    }
+    @Warranty(3)
+    public void Warrantyaccumulator(){
+
     }
 }
